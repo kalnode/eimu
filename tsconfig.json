@@ -1,0 +1,23 @@
+{
+  "extends": "@strapi/typescript-utils/tsconfigs/admin",
+
+  "compilerOptions": {
+    "target": "ESNext",
+    "strict": true,
+    "alwaysStrict": true,
+    "allowJs": true,
+    "checkJs": false
+  },
+
+  "include": ["admin", "custom.d.ts", "types"],
+
+  "exclude": [
+    "node_modules/",
+    "dist/",
+
+    // Do not include server files in the server compilation
+    "server/",
+    // Do not include test files
+    "**/*.test.ts"
+  ]
+}

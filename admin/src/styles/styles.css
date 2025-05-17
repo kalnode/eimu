@@ -1,0 +1,28 @@
+.row {
+    cursor: pointer;
+}
+
+.row:hover {
+    background-color: #f4f4f4;
+}
+
+.checkbox {
+    margin-left: 8px;
+}
+
+.breadcrumbs a {
+    width: 100%;
+}
+
+.breadcrumbs span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 8rem;
+    white-space: nowrap;
+}
+
+.breadcrumbs .overflowEllipsis {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

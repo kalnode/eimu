@@ -1,0 +1,66 @@
+{
+  "name": "@kalnode/eimu",
+  "version": "0.0.8",
+  "description": "A Strapi plugin to manage Elasticsearch indexes & mappings",
+  "homepage": "https://github.com/kalnode/eimu",
+  "strapi": {
+    "name": "EIMU",
+    "description": "A Strapi plugin to manage Elasticsearch indexes & mappings",
+    "kind": "plugin",
+    "displayName": "EIMU"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kalnode/eimu.git"
+  },
+  "author": {
+    "name": "Kal Erikson",
+    "email": "kal@kreation.ca",
+    "url": "https://kreation.ca"
+  },
+  "scripts": {
+    "develop": "tsc -p tsconfig.server.json -w",
+    "build": "tsc -p tsconfig.server.json"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.9.0",
+    "@strapi/design-system": "^1.6.3",
+    "@strapi/helper-plugin": "^4.6.0",
+    "@strapi/icons": "^1.6.3",
+    "markdown-to-txt": "^2.0.1",
+    "prop-types": "^15.7.2",
+    "react-json-tree": "^0.19.0",
+    "short-uuid": "^5.2.0"
+  },
+  "devDependencies": {
+    "@strapi/typescript-utils": "^4.6.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.32",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6",
+    "typescript": "5.0.4"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.25.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.11"
+  },
+  "maintainers": [
+    {
+      "name": "Kal Erikson",
+      "email": "kal@kreation.ca",
+      "url": "https://kreation.ca"
+    }
+  ],
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
