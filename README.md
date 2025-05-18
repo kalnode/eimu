@@ -101,6 +101,7 @@ Essentially, when active, the plugin listens to [Strapi lifecycle events](https:
  - Advanced ES mappings (e.g. geopoint)
  - Batch lifecycle events
  - Mapping presets e.g. define a mapping for a content type and re-use it among multiple ES indexes
+ - Orphan scan and removal
  - Export/import
 
 ## Technical
