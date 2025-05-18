@@ -49,13 +49,13 @@ export default ({ strapi }) => ({
         const pluginState = strapi.plugins[appConfig.app_name].services.general
         const esInterface = strapi.plugins[appConfig.app_name].services.esInterface
         const pluginConfig = await strapi.config.get('plugin.'+appConfig.app_name)
-        const connected = pluginConfig.searchConnector && pluginConfig.searchConnector.host ? await esInterface.ES_checkConnection() : false
+        const connected = pluginConfig.connection && pluginConfig.connection.host ? await esInterface.ES_checkConnection() : false
 
         return {
             cronSchedule: pluginConfig.cronSchedule || "Not configured",
-            elasticHost: pluginConfig.searchConnector && pluginConfig.searchConnector.host ? pluginConfig.searchConnector.host : "Not configured",
-            elasticUserName: pluginConfig.searchConnector && pluginConfig.searchConnector.username ? pluginConfig.searchConnector.username : "Not configured",
-            elasticCertificate: pluginConfig.searchConnector && pluginConfig.searchConnector.certificate ? pluginConfig.searchConnector.certificate : "Not configured",
+            elasticHost: pluginConfig.connection && pluginConfig.connection.host ? pluginConfig.connection.host : "Not configured",
+            elasticUserName: pluginConfig.connection && pluginConfig.connection.username ? pluginConfig.connection.username : "Not configured",
+            elasticCertificate: pluginConfig.connection && pluginConfig.connection.certificate ? pluginConfig.connection.certificate : "Not configured",
             elasticIndexAlias: pluginConfig.indexAliasName || "Not configured",
             connected: connected || "Not connected",
             initialized: pluginState.isInitialized() || "Not initialized"

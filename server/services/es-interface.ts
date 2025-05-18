@@ -25,14 +25,18 @@ export default ({ strapi }) => ({
 
     async ES_initialize({ hostfull, host, uname, password, cert }) {
         try {
+
+            // PARADIGM 1 - ONE-LINE CONNECTION PROPERTIES (hostfull)
             if (hostfull) {
                 ES_CLIENT = await new Client({
                     node: hostfull,
-                    //log: 'trace', // TODO: disabling because TS error. What is this, why do we need it? From legacy plugin.
+                    //log: 'trace', // TODO: disabling because TS error; scrutinize in any case
                     tls: {
                         rejectUnauthorized: false
                     }
                 })
+
+            // PARADIGM 2 - SEPARATE CONNECTION PROPERTIES
             } else {
 
                 ES_CLIENT = await new Client({
@@ -41,9 +45,9 @@ export default ({ strapi }) => ({
                         username: uname,
                         password: password
                     },
-                    //log: 'trace', // TODO: disabling because TS error. What is this, why do we need it? From legacy plugin.
+                    //log: 'trace', // TODO: disabling because TS error; scrutinize in any case
 
-                    // KAL - Disabling tls to get Strapi working on Heroku deploy.
+                    // TODO: Disabling tls to get Strapi working on Heroku deploy.
                     // Possibly don't need this because the ES instance is on the same host (perhaps we need to restrict it to same-domain?)... or... Heroku handles SSL outside of the app running on the instance.
                     tls: {
                         //ca: fs.readFileSync('./config'+cert), //fs.readFileSync('./http_ca.crt'), //cert,
@@ -140,7 +144,6 @@ export default ({ strapi }) => ({
             if (existsTarget) {
                 throw "Target index name already exists"
             }
-
 
             // First, add a block to stop new writes happening during this process.
             await ES_CLIENT.indices.addBlock({
