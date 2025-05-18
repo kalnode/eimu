@@ -10,6 +10,20 @@ Via the plugin UI, you can define multiple Elasticsearch indexes and create reus
 
 Author's note - I made this plugin to satisfy a few goals: learn Strapi plugin development, have a deeper understanding of Elasticsearch and help progress a large project I'm currently working on. The work originally started as a fork of [Punit Sethi's plugin](https://github.com/geeky-biz/strapi-plugin-elasticsearch), however EIMU's scope is much greater and essentially everything has been re-built.
 
+## Features
+
+**Supports:**
+
+ - Multiple ES indexes
+ - Multiple Strapi types per index
+ - Re-useable (preset) type mappings between indexes
+ - Relational fields i.e. if a record has relations, the plugin will index those records too
+ - Instant-indexing and scheduled-indexing (cron cycle)
+ - ES dynamic mapping
+ - Advanced ES mappings (e.g. geopoint)
+ - Batch Strapi lifecycle events
+ - Orphan scan and removal
+ - Export/import
 
 ## Installation
 
@@ -19,8 +33,8 @@ For now, anyone wishing to experiment with the plugin in the current state, foll
 
 ### Pre-requisites
 
-- Working Strapi v4 instance
-- Working Elasticsearch instance
+- Working Strapi 4 instance
+- Working Elasticsearch 8 instance
 
 ### Steps
 
@@ -30,7 +44,8 @@ For now, anyone wishing to experiment with the plugin in the current state, foll
 4. In your Strapi plugins config, add an entry for this plugin (see below)
 5. Build Strapi, via `strapi build` in Strapi root
 6. Run Strapi, via `strapi develop` in Strapi root
-7. Open Strapi and observe the plugin; you should see it in the navigation plugins section: "EIMU"
+7. Alternatively: For hot-reload, run Strapi with `strapi develop --watch-admin` and also run `tsc -p tsconfig.server.json -w` in the plugin folder
+8. Open Strapi and observe the plugin; you should see "EIMU" in the plugins section of the Strapi dashboard navigation
 
 **.env variables**
 
@@ -74,7 +89,7 @@ export default () => ({
 
 ## Usage
 
-On a high level...
+General operation:
 
 (in the plugin UI)
 
@@ -88,25 +103,9 @@ On a high level...
 
 Essentially, when active, the plugin listens to [Strapi lifecycle events](https://docs-v4.strapi.io/dev-docs/backend-customization/models#lifecycle-hooks) and will automatically index affected records, according to the indexes and mappings you've defined in the plugin.
 
-## Features
+## Technical stuff
 
-(Underway)
-
- - Multiple ES indexes
- - Multiple type mappings per index
- - Re-useable (preset) mappings
- - Relations i.e. if a record has relations, the plugin will index those too
- - Instant-indexing and scheduled-indexing (cron cycle)
- - ES dynamic mappings
- - Advanced ES mappings (e.g. geopoint)
- - Batch lifecycle events
- - Mapping presets e.g. define a mapping for a content type and re-use it among multiple ES indexes
- - Orphan scan and removal
- - Export/import
-
-## Technical
-
- - A react app (Strapi plugin)
+ - This is a React app (Strapi plugin)
  - Typescript
  - ES6
  - Elasticsearch 8 API
@@ -116,6 +115,7 @@ Essentially, when active, the plugin listens to [Strapi lifecycle events](https:
  - Strapi v5 support
  - npm release
  - [Strapi Marketplace](https://market.strapi.io) entry
+ - Better logging features (perhaps Logstash support)
 
 ## Future
 
