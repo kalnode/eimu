@@ -14,25 +14,25 @@ Author's note - I made this plugin to satisfy a few goals: learn Strapi plugin d
 
 <p>
 	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%207.png" target="_blank">
-		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%207.png" width="33%" height="auto">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%207.png" width="30%" height="auto">
 	</a>
 	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%209.png" target="_blank">
-		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%208.png" width="33%" height="auto">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%208.png" width="30%" height="auto">
 	</a>
 	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%2012.png" target="_blank">
-		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%2011.png" width="33%" height="auto">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%2011.png" width="30%" height="auto">
 	</a>
 </p>
 
 <p>
 	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%204.png" target="_blank">
-		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%204.png" width="33%" height="auto">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%204.png" width="30%" height="auto">
 	</a>
 	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%205.png" target="_blank">
-		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%205.png" width="33%" height="auto">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%205.png" width="30%" height="auto">
 	</a>
 	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%206.png" target="_blank">
-		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%206.png" width="33%" height="auto">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%206.png" width="30%" height="auto">
 	</a>
 </p>
 
