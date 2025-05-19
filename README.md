@@ -8,15 +8,40 @@ Via the plugin UI, you can define multiple Elasticsearch indexes and create reus
 
 *EIMU = "Elasticsearch Index & Mapping Utility"*
 
-Author's note - I made this plugin to satisfy a few goals: learn Strapi plugin development, have a deeper understanding of Elasticsearch and help progress a large project I'm currently working on. The work originally started as a fork of [Punit Sethi's plugin](https://github.com/geeky-biz/strapi-plugin-elasticsearch), however EIMU's scope is much greater and essentially everything has been re-built.
+Author's note - I made this plugin to satisfy a few goals: learn Strapi plugin development, have a deeper understanding of Elasticsearch and help progress a large project I'm currently working on. The work originally started as a fork of [Punit Sethi's plugin](https://github.com/geeky-biz/strapi-plugin-elasticsearch), however EIMU's scope is much greater and essentially the plugin has been completely re-built.
+
+**Some general screenshots**
+
+<p>
+	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%207.png" target="_blank">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%207.png" width="33%" height="auto">
+	</a>
+	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%209.png" target="_blank">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%208.png" width="33%" height="auto">
+	</a>
+	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%2012.png" target="_blank">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%2011.png" width="33%" height="auto">
+	</a>
+</p>
+
+<p>
+	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%204.png" target="_blank">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%204.png" width="33%" height="auto">
+	</a>
+	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%205.png" target="_blank">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%205.png" width="33%" height="auto">
+	</a>
+	<a href="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%206.png" target="_blank">
+		<img src="https://kreation.imgix.net/projects/eimu/may-19-2025/EIMU%206.png" width="33%" height="auto">
+	</a>
+</p>
 
 ## Features
 
-**Supports:**
+**Still evolving and currently supports...**
 
  - Multiple ES indexes
- - Multiple Strapi types per index
- - Re-useable (preset) type mappings between indexes
+ - Re-useable mappings (presets) shared between indexes
  - Relational fields i.e. if a record has relations, the plugin will index those records too
  - Instant-indexing and scheduled-indexing (cron cycle)
  - ES dynamic mapping
