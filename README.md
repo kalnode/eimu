@@ -50,6 +50,16 @@ Author's note - I made this plugin to satisfy a few goals: learn Strapi plugin d
  - Orphan scan and removal
  - Export/import
 
+## Use Cases
+
+This plugin may be most effective in the following contexts:
+
+- **Frequent model changes** - Any project where data models change frequently (e.g. early in app development), having a need to integrate Elasticsearch early on, and making changes via UI is more appealing than via code
+- **Only basic ES needed** - Anytime basic ES features are enough; no need for code
+- **Learning & exploration** - A dev wants to learn ES and be gradually exposed to it
+
+Note that this plugin only covers basic ES features and does not cover the full spectrum of Elasticsearch capabilities.
+
 ## Installation
 
 Note: An official npm release is coming soon.
