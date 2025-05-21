@@ -15,12 +15,12 @@ exports.default = async ({ strapi }) => {
         await serviceGeneral.initializePlugin();
         const pluginInstanceCached = strapi[app_config_1.default.app_name + '_pluginCache'];
         // CHECK IF ES CONNECTION CONFIG EXISTS
-        if (!Object.keys(pluginConfigFile).includes('searchConnector')) {
-            console.warn("ES PLUGIN - The plugin is enabled but the searchConnector is not configured.");
+        if (!Object.keys(pluginConfigFile).includes('connection')) {
+            console.warn("ES PLUGIN - The plugin is enabled but the connection is not configured.");
         }
         else {
             // INITIALIZE ES CONNECTION
-            const connector = pluginConfigFile['searchConnector'];
+            const connector = pluginConfigFile['connection'];
             await serviceESInterface.ES_initialize({
                 hostfull: connector.hostfull,
                 host: connector.host,
